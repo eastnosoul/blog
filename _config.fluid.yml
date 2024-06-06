@@ -865,10 +865,10 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo: eastnosoul/eastnosoul.github.io
-  repo-id: R_kgDOMACuQA
+  repo: eastnosoul/blog
+  repo-id: R_kgDOMFhAcg
   category: Announcements
-  category-id: DIC_kwDOMACuQM4CflYb
+  category-id: DIC_kwDOMFhAcs4Cf5XT
   theme-light: light
   theme-dark: dark
   mapping: pathname
