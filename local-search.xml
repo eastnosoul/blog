@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>关于git的一些常见操作</title>
-    <link href="/2024/06/06/%E5%85%B3%E4%BA%8Egit%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/"/>
-    <url>/2024/06/06/%E5%85%B3%E4%BA%8Egit%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</url>
+    <title>Git 的一些常用操作</title>
+    <link href="/2024/06/06/Git%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <url>/2024/06/06/Git%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><blockquote><p>Git 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="Git-的常用操作"><a href="#Git-的常用操作" class="headerlink" title="Git 的常用操作"></a>Git 的常用操作</h1><blockquote><p>具体教程可见 <a href="https://git-scm.com/book/zh/v2">Git</a>.</p></blockquote><h2 id="使用前的准备"><a href="#使用前的准备" class="headerlink" title="使用前的准备"></a>使用前的准备</h2><h3 id="查看-Git-的所有配置以及它们的所在位置"><a href="#查看-Git-的所有配置以及它们的所在位置" class="headerlink" title="查看 Git 的所有配置以及它们的所在位置"></a>查看 Git 的所有配置以及它们的所在位置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --list --show-origin<br></code></pre></td></tr></table></figure><h3 id="用户信息"><a href="#用户信息" class="headerlink" title="用户信息"></a>用户信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;username&quot;</span><br>git config --global user.email example@example.com<br></code></pre></td></tr></table></figure><h3 id="配置密钥"><a href="#配置密钥" class="headerlink" title="配置密钥"></a>配置密钥</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;xxx@xxx.com&quot;</span> <span class="hljs-comment"># 然后一直回车</span><br><span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub <span class="hljs-comment"># 复制显示的文字 将其配置到对应的服务器</span><br></code></pre></td></tr></table></figure><h2 id="获取-Git-仓库"><a href="#获取-Git-仓库" class="headerlink" title="获取 Git 仓库"></a>获取 Git 仓库</h2><h3 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h3><p>在已存在的目录下初始化仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br></code></pre></td></tr></table></figure><h3 id="远程"><a href="#远程" class="headerlink" title="远程"></a>远程</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> &lt;url&gt; <span class="hljs-comment"># 将 &lt;url&gt; 替换为你所需要克隆的仓库链接</span><br></code></pre></td></tr></table></figure><h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote add origin &lt;url&gt; <span class="hljs-comment"># &lt;url&gt; 可以是 https 开头，也可能是 git@ 开头(推荐使用)</span><br>git add -A <span class="hljs-comment"># 将所有文件添加到暂存区</span><br>git commit -m <span class="hljs-string">&#x27;new message&#x27;</span> <span class="hljs-comment"># 将所有文件提交，提交的描述为“new message”</span><br>git push origin branch_name <span class="hljs-comment"># 将本地仓库推送到远程仓库</span><br></code></pre></td></tr></table></figure>]]></content>
     
     
     <categories>
@@ -20,7 +20,7 @@
     
     <tags>
       
-      <tag>git</tag>
+      <tag>Git</tag>
       
     </tags>
     
