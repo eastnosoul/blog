@@ -102,5 +102,5 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:eastnosoul/eastnosoul.github.io.git
+  repo: git@github.com:eastnosoul/blog.git
   branch: gh-pages
